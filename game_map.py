@@ -9,9 +9,9 @@ class GameMap:
 
         self.tiles[30:33, 22] = tile_types.wall
 
-        def in_bounds(self, x: int, y: int) -> bool:
-            """ Return true if x and y ae inside the bound of this map"""
-            return 0 <= x < self.width and 0 <= self.height
+    def in_bounds(self, x: int, y: int) -> bool:
+        """ Return true if x and y ae inside the bound of this map"""
+        return 0 <= x < self.width and 0 <= self.height
 
-        def render(self, console: Console) -> None:
-            console.tiles_rgb[0:self.width, 0:self.height] = self.tiles["dark"]
+    def render(self, console: Console) -> None:
+        console.tiles_rgb[0:self.width, 0:self.height] = self.tiles["dark"]

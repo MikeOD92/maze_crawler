@@ -3,7 +3,8 @@ import numpy as np # type: ignore
 
 # Tile graphics structured to be compatable with Console.tiles_rgb.
 graphics_dt = np.dtype(
-    [Tuple("ch",np.int32),
+    [
+    ("ch",np.int32),
     ("fg","3B"),
     ("bg", "3B"),
     ]
